@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  font-family: "微軟正黑體"; }
+
+@media all and (min-width: 1200px) {
+  body {
+    background: url("../img/background.png");
+    background-size: cover;
+    font-family: "微軟正黑體"; }
+  .navTop {
+    color: white;
+    background: black;
+    overflow: hidden; }
+    .navTop span {
+      float: right;
+      padding: .3vw;
+      margin: 0 1vw 0; }
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: "微軟正黑體"; }
+    .nav .logo img {
+      margin: 1.5vw 0 0 0;
+      width: 12vw; }
+  .navBar ul {
+    display: flex;
+    justify-content: space-around; }
+    .navBar ul li {
+      margin: 3vw 40px 0; }
+      .navBar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1vw; }
+  .navLogin .login {
+    margin: 2.3vw 0 0 0;
+    width: 8vw;
+    height: 2.5vw;
+    background: url("../img/loginButton.png");
+    background-size: cover;
+    text-align: center;
+    line-height: 2.5vw; }
+    .navLogin .login a {
+      color: black;
+      font-size: .8vw; }
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto; }
+  .title {
+    width: 18.5vw;
+    height: 6vw;
+    background: url("../img/slogan-frame.png");
+    background-size: cover;
+    color: white;
+    margin: 5vw auto 0; }
+    .title h1 {
+      font-weight: bold;
+      text-align: center;
+      line-height: 6vw;
+      font-size: 3vw; }
+    .title h2 {
+      text-align: center; }
+  .select-section {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5vw auto; }
+    .select-section button {
+      font-size: 20px;
+      background-color: #1d2088;
+      color: white;
+      padding: 0.5vw;
+      box-shadow: white;
+      border-radius: 20px; }
+  .vedio {
+    width: 55%;
+    height: 450px;
+    overflow: hidden;
+    background: url("../img/vedio-frame.png");
+    background-size: cover;
+    text-align: center;
+    margin: 5vw auto 0; }
+    .vedio iframe {
+      margin: 5vw 0 0 0; }
+  .rabbit {
+    width: 10vw;
+    position: absolute;
+    top: 30vw;
+    right: 20vw;
+    z-index: -1; }
+    .rabbit img {
+      width: 20vw; }
+  .fatty {
+    width: 10vw;
+    position: absolute;
+    top: 37vw;
+    left: 14vw;
+    z-index: -1; }
+    .fatty img {
+      width: 20vw; }
+  .vedio-slider {
+    width: 55%;
+    height: 10vw;
+    margin: 2vw auto;
+    background-color: #CCC;
+    border-radius: 20px; }
+  .question {
+    width: 55%;
+    margin: 5vw auto;
+    background: #dcdcdc;
+    border-radius: 30px;
+    padding: 5vw;
+    box-sizing: border-box; }
+    .question h2 {
+      font-size: 2vw;
+      font-weight: bold; }
+    .question li {
+      font-size: 1.5vw;
+      margin: 2vw 0; }
+      .question li a {
+        color: black; }
+      .question li a:hover {
+        color: #1d2088; }
+    .question p {
+      font-size: 1.5vw;
+      margin: 2vw 0;
+      color: red; }
+    .question .button-section button {
+      float: right;
+      font-size: 20px;
+      background-color: #1d2088;
+      color: white;
+      padding: 0.5vw;
+      box-shadow: white;
+      border-radius: 20px;
+      margin-right: 1vw; }
+  .tip-robot {
+    position: fixed;
+    bottom: 3vw;
+    right: 3vw; }
+    .tip-robot img {
+      width: 15vw; }
+  .footer {
+    background: black;
+    font-family: "微軟正黑體"; }
+    .footer .footer-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1vw; }
+    .footer .icon {
+      text-align: center; }
+      .footer .icon img {
+        width: 2vw; }
+    .footer p {
+      margin-top: 1vw;
+      text-align: center;
+      color: white; } }

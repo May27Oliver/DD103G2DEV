@@ -1,4 +1,11 @@
-//æ ¼ç·š
+####var
+$large:1200px;
+$medium:992px;
+$small:768px;
+
+
+####mixin
+//®æ½u
 @mixin grid($num) { 
     @for $i from 1 through $num {
 

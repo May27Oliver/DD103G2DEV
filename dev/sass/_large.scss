@@ -1,0 +1,224 @@
+@include respond(large) {
+
+    body {
+        // font-size: 40px;
+        background:url("../img/background.png");
+        background-size:cover;
+        font-family: "微軟正黑體";
+    }
+    
+    
+            // 天長條
+    .navTop{
+        
+        color:white;
+        background:black;
+        overflow: hidden;
+        span{
+            float:right;
+            padding: .3vw;
+            margin:0 1vw 0;
+        }
+    }
+
+    .nav{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        font-family: "微軟正黑體";
+        .logo{
+            img{
+                margin:1.5vw 0 0 0 ;
+                width:12vw;
+            }
+            
+        }
+    }
+    
+    .navBar ul{
+        display: flex;
+        justify-content: space-around;
+        li{
+            margin: 3vw 40px 0 ;
+            a{
+                color:white;
+                text-decoration: none;
+                font-size: 1vw;  
+            }
+            
+        }
+    }
+    
+    .navLogin{
+        .login{
+            margin:2.3vw 0 0 0;
+            width:8vw;
+            height:2.5vw;
+            background: url("../img/loginButton.png");
+            background-size: cover;
+            text-align: center;
+            line-height: 2.5vw;
+            a{
+                color:black;
+                font-size: .8vw; 
+            }
+        }
+    }
+    .wrap{
+        max-width:1200px;
+        margin:0 auto;
+    }
+    // 網頁標題
+    .title{
+        width: 18.5vw;
+        height: 6vw;
+        background: url("../img/slogan-frame.png");
+        background-size: cover;
+        color:white;
+        margin: 5vw auto 0;
+        h1{
+            font-weight: bold;
+            text-align: center;
+            line-height: 6vw;
+            font-size: 3vw;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+    // 目錄與頁籤
+    .select-section{
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        margin: 5vw auto;
+        button{
+            font-size: 20px;
+            background-color: #1d2088;
+            color: white;
+            padding: 0.5vw;
+            box-shadow: white;
+            border-radius: 20px;
+        }
+    }
+    // 影片區
+    .vedio{
+        width: 55%;
+        height: 450px;
+        overflow: hidden;
+        background: url("../img/vedio-frame.png");
+        background-size: cover;
+        text-align: center;//iframe是inline屬性
+        margin: 5vw auto 0;
+        iframe{
+            margin: 5vw 0 0 0;
+        }
+    }
+    // 背景小物
+    .rabbit{
+        width: 10vw;
+        position: absolute;
+        top:30vw;
+        right:20vw;
+        z-index:-1;
+        img{
+            width: 20vw;
+        }
+    }
+
+    .fatty{
+        width: 10vw;
+        position: absolute;
+        top:37vw;
+        left:14vw;
+        z-index:-1;
+        img{
+            width: 20vw;
+        }
+    }
+
+    // 影片區slider
+    .vedio-slider{
+        width: 55%;
+        height: 10vw;
+        margin: 2vw auto;
+        background-color: #CCC;
+        border-radius: 20px;
+    }
+    // Question
+    .question{
+        width: 55%;
+        margin: 5vw auto;
+        background: #dcdcdc;
+        border-radius: 30px;
+        padding: 5vw;
+        box-sizing: border-box;
+        h2{
+          font-size: 2vw;
+          font-weight: bold;  
+        }
+        li{
+            font-size: 1.5vw;
+            margin: 2vw 0;
+            a{
+                color:black;
+            }
+            a:hover {
+            color: #1d2088;
+            }
+        }
+        
+        
+        p{
+            font-size: 1.5vw;
+            margin: 2vw 0;
+            color: red;
+        }
+        .button-section{
+            // width: 25%;
+            // display: flex;
+            // justify-content: space-around;
+            button{
+                float:right;
+                font-size: 20px;
+                background-color: #1d2088;
+                color: white;
+                padding: 0.5vw;
+                box-shadow: white;
+                border-radius: 20px;
+                margin-right: 1vw;
+            }
+        }
+    }
+    // 聊天機器人
+    .tip-robot{
+        position: fixed;
+        bottom: 3vw;
+        right: 3vw;
+        img{
+            width: 15vw;
+        }
+    }
+    // footer
+    .footer{
+        background: black;
+        font-family: "微軟正黑體";
+        .footer-wrap {
+            max-width:1200px;
+            margin:0 auto;
+            padding: 1vw;
+        }
+        .icon{
+            text-align: center;
+            img{
+               width: 2vw; 
+            }
+        }
+        p{
+            margin-top:1vw;
+            text-align: center;
+            color:white;
+        }
+    }
+}
