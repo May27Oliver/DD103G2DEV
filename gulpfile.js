@@ -3,7 +3,8 @@ let cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
-// var fileinclude = require('gulp-file-include');
+var fileinclude = require('gulp-file-include');
+
 
 gulp.task('concat', function () {
     //do sometime

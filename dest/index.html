@@ -9,35 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 </head>
 <body>
-    <!---- 選單區 ---->
-    <header>
-    <!-- 及時支持度顯示 -->
-        <div class="navTop">
-            <span>大眼星: 8888</span>
-            <span>智多星: 8888</span>
-            <span>胖仔星: 8888</span>
-        </div>
-    <!-- 天長條 -->
-        <div class="nav">
-            <div class="logo">
-                <a href="">
-                    <img src="img/logo.png" alt="征服宇宙LOGO">
-                </a>
-            </div>
-            <div class="navBar">
-                <ul>
-                    <li><a href="">宇宙星聞</a></li>
-                    <li><a href="">公民學堂</a></li>
-                    <li><a href="">公民投票</a></li>
-                    <li><a href="">宇宙商城</a></li>
-                    <li><a href="">公民的家</a></li>
-                </ul>
-            </div>
-            <div class="navLogin">
-                <div class="login"><a href="">登入/註冊</a></div>
-            </div>
-        </div>
-    </header>
+    
+    @@include('./template/header.html')
     <div class="wrap">
         <!-- 網頁標題 -->
         <div class="title">
@@ -86,7 +59,8 @@
         </div>
     </div>
     <!-- footer -->
-    <div class="footer">
+    @@include('./template/footer.html')
+    <!-- <div class="footer">
         <div class="footer-wrap ">
             <div class="icon">
                 <a href=""><img src="img/instagram.png" alt=""></a>
@@ -95,7 +69,42 @@
             </div>
             <p>Copyright © 2019 DD103G2</p>
         </div>
+    </div> -->
+<script src="js/animation.js"></script>
+</body>
+</html>       <p>恭喜答對！<br>您將得到5點候選人支持度與宇宙幣100元！</p>
+            <div class="button-section">
+                <button>上一題</button>
+                <button>下一題</button>
+                <!-- <button>回目錄</button> -->
+            </div>
+        </div>
+        <!-- 聊天機器人 -->
+        <div class="tip-robot">
+            <img src="img/chat-robot.png" alt="">
+        </div>
     </div>
+    <!-- footer -->
+    <div class="footer">
+    <div class="footer-wrap ">
+        <div class="icon">
+            <a href=""><img src="img/instagram.png" alt=""></a>
+            <a href=""><img src="img/twitter.png" alt=""></a>
+            <a href=""><img src="img/facebook.png" alt=""></a>
+        </div>
+        <p>Copyright © 2019 DD103G2</p>
+    </div>
+</div>
+    <!-- <div class="footer">
+        <div class="footer-wrap ">
+            <div class="icon">
+                <a href=""><img src="img/instagram.png" alt=""></a>
+                <a href=""><img src="img/twitter.png" alt=""></a>
+                <a href=""><img src="img/facebook.png" alt=""></a>
+            </div>
+            <p>Copyright © 2019 DD103G2</p>
+        </div>
+    </div> -->
 <script src="js/animation.js"></script>
 </body>
 </html>

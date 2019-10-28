@@ -9,35 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 </head>
 <body>
-    <!---- 選單區 ---->
-    <header>
-    <!-- 及時支持度顯示 -->
-        <div class="navTop">
-            <span>大眼星: 8888</span>
-            <span>智多星: 8888</span>
-            <span>胖仔星: 8888</span>
-        </div>
-    <!-- 天長條 -->
-        <div class="nav">
-            <div class="logo">
-                <a href="">
-                    <img src="img/logo.png" alt="征服宇宙LOGO">
-                </a>
-            </div>
-            <div class="navBar">
-                <ul>
-                    <li><a href="">宇宙星聞</a></li>
-                    <li><a href="">公民學堂</a></li>
-                    <li><a href="">公民投票</a></li>
-                    <li><a href="">宇宙商城</a></li>
-                    <li><a href="">公民的家</a></li>
-                </ul>
-            </div>
-            <div class="navLogin">
-                <div class="login"><a href="">登入/註冊</a></div>
-            </div>
-        </div>
-    </header>
+    
+    @@include('./template/header.html')
     <div class="wrap">
         <!-- 網頁標題 -->
         <div class="title">
@@ -86,7 +59,8 @@
         </div>
     </div>
     <!-- footer -->
-    <div class="footer">
+    @@include('./template/footer.html')
+    <!-- <div class="footer">
         <div class="footer-wrap ">
             <div class="icon">
                 <a href=""><img src="img/instagram.png" alt=""></a>
@@ -95,7 +69,7 @@
             </div>
             <p>Copyright © 2019 DD103G2</p>
         </div>
-    </div>
+    </div> -->
 <script src="js/animation.js"></script>
 </body>
 </html>
